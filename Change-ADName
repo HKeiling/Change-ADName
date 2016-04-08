@@ -90,3 +90,5 @@ foreach ($User in $CSV) {
     $MasterLogArray | export-csv $MasterLog -NoTypeInformation -Append
 
 }
+
+# Testing History.
