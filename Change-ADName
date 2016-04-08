@@ -28,7 +28,7 @@ $CSV = import-csv "C:\scripts\CSV.csv"
 # Location of the log file
 $MasterLog = "C:\scripts\NameChangeLog.csv"
 
-# Which domain controller to use (HQ users and SR users have to be done separately)
+# Which domain controller to use
 $DC = "domainController.domain.local"
 #endregion
 
@@ -90,5 +90,3 @@ foreach ($User in $CSV) {
     $MasterLogArray | export-csv $MasterLog -NoTypeInformation -Append
 
 }
-
-# Testing History.
